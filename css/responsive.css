@@ -1,0 +1,40 @@
+/* Small devices  */
+@media( max-width: 576px){
+    .intro__content{
+        text-align: center;
+    }
+    .about > h1{
+        margin-bottom: 30vw;
+    }
+    .about .card h2{
+        padding: 50vw 1vw 10vw;
+        font: 300 5vw Zen Maru Gothic, sans-serr;
+
+    }
+}
+/* Medium devices */
+@media( max-width: 960px){
+
+}
+/* Large devices */
+@media( min-width: 961px){
+    html, body{
+        font-size: 24px;
+    }
+    .intro__nav li{
+        font: 300 1.5vw Montserrat, sans-serrif;
+    }
+    .intro__banner h1{
+        font-size: 4vw;
+    }
+    .intro__banner h1 span{
+        font: 700 5vw Montserrat, sans-serrif;
+    }
+    .intro__banner p{
+        font: 300 1.5vw Zen Maru Gothic, sans-serr;
+    }
+    .intro__banner button{
+        font: 600 1.5vw Montserrat, sans-serrif;
+    }
+
+}

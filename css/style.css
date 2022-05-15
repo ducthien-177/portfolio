@@ -1,0 +1,222 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 2000px;
+    font-family: 'Zen Maru Gothic', 'Montserrat', sans-serif;
+}
+.title{
+    padding: 1.5em;
+    text-align: center;
+    font: 300 2rem Montserrat, sans-serrif;
+}
+
+/* INTRO SECTION */
+.intro{
+    width: 100%;
+    background-color: rgb(84, 140, 168);
+    
+}
+.intro .logo{
+    height: 2rem;
+}
+.intro .navbar{
+    background-color: rgba(254, 251, 231, 0.8);
+}
+.intro .navbar a span{
+    font: 700 1rem Montserrat, sans-serrif;
+    background: -webkit-linear-gradient(#673576, #EE7227);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro__nav li{
+    font: 300 1.5rem Montserrat, sans-serrif;
+    margin: 0 1em;
+    padding: 0 1em;
+}
+.intro__nav li:hover {
+    background-color: rgb(204, 243, 238);
+    border-radius: 20px;
+}
+.intro__content{
+    margin: auto;
+}
+.intro .intro__banner img{
+    display: block;
+    max-width: 100%;
+    padding-top: 1em;
+    object-fit: contain;
+    margin: auto;
+}
+
+.intro__banner h1{
+    color:rgb(255, 179, 25);
+    line-height: 1em;
+    letter-spacing: 4px;
+    font-size: 2rem;
+}
+.intro__banner h1 span{
+    font: 700 3rem Montserrat, sans-serrif;
+    color: white;
+}
+.intro__banner p{
+    color: whitesmoke;
+    font: 300 1rem Zen Maru Gothic, sans-serr;
+    padding: 1em 0;
+}
+.intro__banner button{
+    padding: 1em 2em;
+    font: 600 1rem Montserrat, sans-serrif;
+    color: white;
+    background: linear-gradient(45deg, rgb(255, 179, 25), rgb(255, 225, 148) );
+    border-radius: 50px;
+    margin:auto;
+    border:none;
+    outline-offset: 5px;
+    outline: 4px dashed white;
+    letter-spacing: 4px;
+    display: block;
+}
+
+/* ABOUT SECTION */
+
+.about .card {
+    /* box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4); */
+    background-color: rgba(48, 170, 221, 0.8);
+    position: relative;
+    height: 100%;
+}
+.about .card img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border-radius: 50%;
+    outline: 4px solid whitesmoke;
+    outline-offset: 4px;
+}
+.about .card h2{
+    text-align: center;
+    padding: 60% .5em 30%;
+    letter-spacing: 4px;
+    line-height: 5em;
+    text-size-adjust: 90%;
+    color: whitesmoke;
+    font: 300 1rem Zen Maru Gothic, sans-serr;
+}
+.about .card__footer i{
+    color: white;
+    font-size: 2em;
+    padding: 5vw 1vw;
+    opacity: .8;
+}
+.about .card__footer i:hover{
+    opacity: 1;
+}
+.about__content{
+    padding-left: 3em;
+}
+.about__content p{
+    padding: .2em 1em;
+    font: 300 1rem Zen Maru Gothic, sans-serr;
+}
+.about__content h3{
+    font: 400 1rem Zen Maru Gothic, sans-serr;
+}
+
+
+
+/* SKILLS SECTION */
+.skills__content{
+    background-image: url(../img/bg_mt.fuji_night.png);
+    background-size: cover;
+    padding: 5em 0;
+}
+.skills__content .container{
+    background-color: whitesmoke;
+    padding: 2em !important;
+    border-radius: 10px;
+}
+.skills__content .row{
+    --bs-gutter-y: 1.5em ;
+}
+.skills__card{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    text-align: center;
+}
+.skills__card img{
+    max-width: 100%;
+    height: 20vh;
+    object-fit: cover;
+
+}
+
+/* PROJECTS SECTION */
+.projects__content{
+    background-image: linear-gradient(0deg, #36d1dc, #5b86e5);
+    padding: 3rem;
+} 
+.projects__content .row{
+    --bs-gutter-y: 1.5em ;
+}
+.projects__card{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    text-align: center;
+} 
+.projects__card:hover button{
+    background-color: #36d1dc;
+    color: aliceblue;
+}
+.projects__card img{
+    max-width: 100%;
+    height: 40vh;
+    object-fit: cover;
+
+}
+.projects__card p{
+    padding: 1em;
+}
+.projects__card button{
+    width: 100%;
+    padding: 1em;
+}
+
+/* MODAL */
+.modal-body img{
+    width: 100%;
+}
+
+/* CONTACT FOOTER */
+.contact{
+    background-color: #282A36;
+    color: white;
+    padding: 7em 0;
+    text-align: center;
+  
+}
+.contact__sns a{
+    text-decoration: none;
+    color: inherit;
+}
+.contact__sns i{
+    padding: 1em;
+    font-size: 5vw;
+    opacity: 0.6;
+}
+.contact__sns i:hover{
+    opacity: 1;
+}
