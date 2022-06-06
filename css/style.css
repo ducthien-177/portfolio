@@ -82,6 +82,15 @@ html, body{
     outline: 4px dashed white;
     letter-spacing: 4px;
     display: block;
+    transition: all 1s ease-in-out;
+}
+.intro__banner a{
+    text-decoration: none;
+    color: white;
+}
+.intro__banner button:hover{
+    background: linear-gradient(45deg, rgb(252, 173, 15), rgb(247, 180, 10) );
+
 }
 
 /* ABOUT SECTION */
