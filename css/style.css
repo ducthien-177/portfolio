@@ -65,6 +65,23 @@ html, body{
     font: 700 3rem Montserrat, sans-serrif;
     color: white;
 }
+.intro__banner .input-cursor{
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+
 .intro__banner p{
     color: whitesmoke;
     font: 300 1rem Zen Maru Gothic, sans-serr;
@@ -181,6 +198,7 @@ html, body{
     --bs-gutter-y: 1.5em ;
 }
 .projects__card{
+    position: relative;
     background-color: whitesmoke;
     border-radius: 10px;
     overflow: hidden;
@@ -188,10 +206,7 @@ html, body{
     height: 100%;
     text-align: center;
 } 
-.projects__card:hover button{
-    background-color: #36d1dc;
-    color: aliceblue;
-}
+
 .projects__card img{
     max-width: 100%;
     height: 40vh;
@@ -202,8 +217,23 @@ html, body{
     padding: 1em;
 }
 .projects__card button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #282a36b2;
+    color: white;
     width: 100%;
-    padding: 1em;
+    height: 100%;
+    font-size: 1.5rem;
+    cursor: none;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.projects__card:hover button{
+    opacity: 1;
+}
+.projects__card button:hover{
+    color: white;
 }
 
 /* MODAL */

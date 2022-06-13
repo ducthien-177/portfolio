@@ -60,7 +60,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 intro__content ">
-                      <h1 data-shadow='LE DUC THIEN'>Hi! I am <br><span>LE DUC THIEN</span></h1>
+                      <h1>Hi! I am </h1>
+                      <div class="typing-animation">
+                        <span id="sentence" class="sentence"></span>
+                        <span class="input-cursor"></span>
+                      </div>
                       <p>Webジニアになりたいベトナム君</p>
 
                       <button><a href="https://drive.google.com/file/d/1NJBnXLL9kfnpdoyvH-OWX1YeB2L1zAih/view?usp=sharing">Get CV</a></button>
@@ -181,59 +185,57 @@
                 </button>
               </div>
             </div>
+            
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="projects__card">
                 <img src="./img/project02.png" alt="Sannetsu-Project">
                 <p>社会実装のProject</p>
-                <!-- Button trigger modal -->
+                
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#SanetsuProject">
                 See More
                 </button>
               </div>
             </div>
- <!--  
+  
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="projects__card">
                 <img src="./img/project03.png" alt="Cyber-Project">
                 <p>CyberInstructionのホームページ</p>
-                <!~~ Button trigger modal ~~>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#CyberProject">
                 See More
                 </button>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="projects__card">
                 <img src="./img/project04.png" alt="KosenLibrary-Project">
                 <p>高専の図書館システム</p>
-                <!~~ Button trigger modal ~~>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#KosenLibraryProject">
                 See More
                 </button>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="projects__card">
                 <img src="./img/project05.png" alt="Java-Project">
                 <p>Java実践プログラミング</p>
-                <!~~ Button trigger modal ~~>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#JavaProject">
                 See More
                 </button>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="projects__card">
                 <img src="./img/project06.png" alt="Cake-Project">
                 <p>ケーキ屋さんのホームページ</p>
-                <!~~ Button trigger modal ~~>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#CakeProject">
                 See More
                 </button>
               </div>
             </div>
- -->        
-          
 
           </div>
         </div>
@@ -450,6 +452,9 @@
     
     <!-- Bootstrap 5 js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/main.js"></script>
 
+    
  </body>
 </html>
