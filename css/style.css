@@ -61,27 +61,19 @@ html, body{
     letter-spacing: 4px;
     font-size: 2rem;
 }
-.intro__banner h1 span{
+.intro__banner .typing-out{
     font: 700 3rem Montserrat, sans-serrif;
     color: white;
-}
-.intro__banner .input-cursor{
-    display: inline-block;
-    width: 2px;
-    height: 42px;
-    background-color: white;
-    margin-left: 8px;
-    animation: blink .6s linear infinite alternate;
+    border-right: 4px solid orange;
+    width: fit-content;
+    animation: blink .5s forwards infinite;
 }
 
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
-
-
+@keyframes blink{
+    from { border-color: transparent;}
+    to { border-color: orange;}
+    
+}
 .intro__banner p{
     color: whitesmoke;
     font: 300 1rem Zen Maru Gothic, sans-serr;
